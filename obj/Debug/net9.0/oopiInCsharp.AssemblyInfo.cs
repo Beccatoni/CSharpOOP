@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("oopiInCsharp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0ae0323578f6dc8d2d42768be3869d510df17caf")]
 [assembly: System.Reflection.AssemblyProductAttribute("oopiInCsharp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("oopiInCsharp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

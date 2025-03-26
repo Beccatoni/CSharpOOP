@@ -12,3 +12,4 @@ C:\Users\rbccm\RiderProjects\oopiInCsharp\oopiInCsharp\obj\Debug\net9.0\refint\o
 C:\Users\rbccm\RiderProjects\oopiInCsharp\oopiInCsharp\obj\Debug\net9.0\oopiInCsharp.pdb
 C:\Users\rbccm\RiderProjects\oopiInCsharp\oopiInCsharp\obj\Debug\net9.0\oopiInCsharp.genruntimeconfig.cache
 C:\Users\rbccm\RiderProjects\oopiInCsharp\oopiInCsharp\obj\Debug\net9.0\ref\oopiInCsharp.dll
+C:\Users\rbccm\RiderProjects\oopiInCsharp\oopiInCsharp\obj\Debug\net9.0\oopiInCsharp.sourcelink.json
