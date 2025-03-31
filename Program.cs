@@ -20,3 +20,8 @@ unknownStar.Shine();
 unknownStar.GrowOlder();
 
 Forest.PrintForestFacts();
+
+Console.WriteLine(Forest.ForestsCreated);
+Forest f1 = new Forest("Gishwati");
+Forest f2 = new Forest("Nyungwe", "Rain forest");
+Console.WriteLine(Forest.ForestsCreated);
