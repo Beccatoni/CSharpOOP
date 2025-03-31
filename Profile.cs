@@ -23,7 +23,11 @@ public class Profile
    {
       return $"{name}, {age} years old, {city}--{country}, {pronouns}. Hobbies: {string.Join(", ", hobbies)}";
    }
-   
+
+   public void SetHobbies(string[] hobbies)
+   {
+      this.hobbies = hobbies;
+   }
    
    
 }
