@@ -18,3 +18,5 @@ sun.Supernova();
 Star unknownStar = new Star("Mystery Star");
 unknownStar.Shine();
 unknownStar.GrowOlder();
+
+Forest.PrintForestFacts();

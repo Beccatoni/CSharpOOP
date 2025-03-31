@@ -18,7 +18,27 @@ public class Forest
     {
         Console.WriteLine("No biome provided, using default value \"Unknown\".");
     }
-    
+
+    static Forest()
+    {
+        forestFacts = $"Forests provide a diversity of ecosystem services including:\n\taiding in regulating climate.\n\tpurifying water.\n\tmitigating natural hazards such as floods.\n";
+        ForestsCreated = 0;
+    }
+
+    public static int ForestsCreated
+    {
+        get;
+        private set;
+    }
+    public static string forestFacts;
+
+    private static string ForestFacts
+    {
+        get
+        {
+            return forestFacts;
+        }
+    }
     public int Grow()
     {
         trees += 30;
@@ -32,4 +52,10 @@ public class Forest
         age += 1;
         return trees;
     }
+
+    public static void PrintForestFacts()
+    {
+        Console.WriteLine(ForestFacts);
+    }
+    
 }
