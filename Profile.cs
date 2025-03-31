@@ -18,5 +18,12 @@ public class Profile
       this.pronouns = pronouns;
       this.hobbies = new string[] { };
    }
+
+   public string ViewProfile()
+   {
+      return $"{name}, {age} years old, {city}--{country}, {pronouns}. Hobbies: {string.Join(", ", hobbies)}";
+   }
+   
+   
    
 }
