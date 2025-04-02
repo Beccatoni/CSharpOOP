@@ -61,7 +61,7 @@ engineer1.MakeHRRequest();
 
 // upcasting 
 //create a Dog Object
-Dog myDog1 = new Dog();
+Animal myDog1 = new Dog();
 // Upcast the Dog object to an animal refernce
 Animal myAnimal = myDog;
 myAnimal.MakeSound();// outputs Dog barks.
@@ -108,3 +108,52 @@ Engineer engineer = myEmployeeEngineer1 as Engineer;
 Console.WriteLine(engineer == null);
 Manager manager = myEmployeeEngineer2 as Manager;
 Console.WriteLine(manager == null);
+
+// abstract classes and methods
+Manager2 myManager = new Manager2();
+myManager.MakeHRRequest();
+// myManager.Promotion();
+
+// many examples
+Employee2 myengineerEmployee = new Engineer2();
+Employee2 mymanagerEmployee = new Manager2();
+Employee2 myInternEmployee = new Intern();
+Employee2 myHREmployee = new HR();
+Employee2 mySalespersonEmployee = new Salesperson();
+Employee2 myDeveloperEmployee = new Developer();
+Employee2 myDesignerEmployee = new Designer();
+Employee2 myCEOEmployee = new CEO();
+
+myengineerEmployee.MakeHRRequest();
+myengineerEmployee.ClockIn();
+
+mymanagerEmployee.MakeHRRequest();
+mymanagerEmployee.ClockIn();
+
+
+myInternEmployee.MakeHRRequest(); // Output: Intern makes an HR request.
+myInternEmployee.ClockIn(); // Output: Employee clocks in.
+
+myHREmployee.MakeHRRequest(); // Output: HR processes an HR request.
+myHREmployee.ClockIn(); // Output: Employee clocks in.
+
+mySalespersonEmployee.MakeHRRequest(); // Output: Salesperson makes an HR request.
+mySalespersonEmployee.ClockIn(); // Output: Employee clocks in.
+
+myDeveloperEmployee.MakeHRRequest(); // Output: Developer makes an HR request.
+myDeveloperEmployee.ClockIn(); // Output: Employee clocks in.
+
+myDesignerEmployee.MakeHRRequest(); // Output: Designer makes an HR request.
+myDesignerEmployee.ClockIn(); // Output: Employee clocks in.
+
+myCEOEmployee.MakeHRRequest(); // Output: CEO makes an HR request.
+myCEOEmployee.ClockIn();
+
+((Engineer2)myengineerEmployee).Promotion();
+((Manager2)mymanagerEmployee).ConductMeeting();
+((Intern)myInternEmployee).FetchCoffee();
+((HR)myHREmployee).OrganizeTraining();
+((Salesperson)mySalespersonEmployee).MakeSale();
+((Developer)myDeveloperEmployee).WriteCode();
+((Designer)myDesignerEmployee).CreateDesign();
+((CEO)myCEOEmployee).MakeDecision();
