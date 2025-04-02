@@ -57,9 +57,7 @@ Manager manager1 = new Manager();
 manager1.MakeHRRequest();
 Engineer engineer1 = new Engineer();
 engineer1.MakeHRRequest();
-//upcasting employee class
-Employee myEmployeeManager = manager1;
-myEmployeeManager.MakeHRRequest();
+
 
 // upcasting 
 //create a Dog Object
@@ -70,3 +68,43 @@ myAnimal.MakeSound();// outputs Dog barks.
 myAnimal.Walk(); // outputs: Animal walks.
 // myAnimal.Sleep(); // outputs: Error
 
+//upcasting employee class
+Employee myEmployeeManager = manager1;
+myEmployeeManager.MakeHRRequest();
+
+// downcasting
+Dog myDog2 = (Dog)myAnimal;
+myDog2.MakeSound();
+myDog2.Walk();
+myDog2.Sleep();
+
+Manager manager2 = (Manager)myEmployeeManager;
+manager2.MoveToOffice();
+
+// is operator
+if (myAnimal is Dog)
+{
+    Console.WriteLine("This is a Dog.");
+}
+
+if (myAnimal is Cat)
+{
+    Console.WriteLine("This is a cat.");
+}
+else
+{
+    Console.WriteLine("This is not a Cat.");
+}
+
+Employee myEmployee = new Engineer();
+Console.WriteLine(myEmployee is Engineer);
+Console.WriteLine(myEmployee is Manager);
+
+// as operators
+Employee myEmployeeEngineer1 = new Engineer();
+Employee myEmployeeEngineer2 = new Engineer();
+
+Engineer engineer = myEmployeeEngineer1 as Engineer;
+Console.WriteLine(engineer == null);
+Manager manager = myEmployeeEngineer2 as Manager;
+Console.WriteLine(manager == null);
