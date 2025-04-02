@@ -9,7 +9,7 @@ public class Vehicle
     public Vehicle(double speed)
     {
         Speed = speed;
-        LicensePlate = Tools.GenerateLicensePlate();
+        // LicensePlate = Tools.GenerateLicensePlate();
     }
 
     public virtual void SpeedUp()

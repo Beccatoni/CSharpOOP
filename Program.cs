@@ -45,3 +45,9 @@ Console.WriteLine($"Truck's faster speed: {t.Speed}");
 // Console.WriteLine($"Bicycle with {b.Wheels} wheels, driving at {b.Speed} km/h.");
 // b.SpeedUp();
 // Console.WriteLine($"Bicycle's faster speed: {b.Speed}");
+
+//polymorphism in action
+Animal myDog = new Dog();
+Animal myCat = new Cat();
+myDog.MakeSound();
+myCat.MakeSound();
