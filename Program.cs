@@ -57,6 +57,9 @@ Manager manager1 = new Manager();
 manager1.MakeHRRequest();
 Engineer engineer1 = new Engineer();
 engineer1.MakeHRRequest();
+//upcasting employee class
+Employee myEmployeeManager = manager1;
+myEmployeeManager.MakeHRRequest();
 
 // upcasting 
 //create a Dog Object
@@ -66,3 +69,4 @@ Animal myAnimal = myDog;
 myAnimal.MakeSound();// outputs Dog barks.
 myAnimal.Walk(); // outputs: Animal walks.
 // myAnimal.Sleep(); // outputs: Error
+
