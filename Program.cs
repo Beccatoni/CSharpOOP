@@ -157,3 +157,28 @@ myCEOEmployee.ClockIn();
 ((Developer)myDeveloperEmployee).WriteCode();
 ((Designer)myDesignerEmployee).CreateDesign();
 ((CEO)myCEOEmployee).MakeDecision();
+
+
+Novel nov1 = new Novel(5);
+Novel nov2 = nov1;
+nov2.Flip();
+Console.WriteLine(nov1.CurrentPage);
+Console.WriteLine(nov2.CurrentPage);
+
+Book b1 = new Book();
+Book b2 = new Book();
+Book b3 = b1;
+Console.WriteLine(b1 == b2);
+Console.WriteLine(b1 == b3);
+
+Encyclopedia enc = new Encyclopedia();
+IFlippable fEnc = enc;
+Book bEnc = enc;
+fEnc.CurrentPage = 42;
+bEnc.Stringify();
+Console.WriteLine($"Check: {fEnc == bEnc}");
+
+Encyclopedia enc1 = new Encyclopedia(32, "Encyclopedia Britannica", "Encyclopedia Britannica");
+Encyclopedia enc2 = new Encyclopedia(19, "Codecademy Curriculum Team", "Codecademy Encyclopedia of Coding Knowledge");
+Novel nov3 = new Novel(48, "Jane Austen", "Pride and Prejudice");
+Novel nov4 = new Novel(23, "Charles Dickens");
