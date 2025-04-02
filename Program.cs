@@ -51,3 +51,9 @@ Animal myDog = new Dog();
 Animal myCat = new Cat();
 myDog.MakeSound();
 myCat.MakeSound();
+
+// another example
+Manager manager1 = new Manager();
+manager1.MakeHRRequest();
+Engineer engineer1 = new Engineer();
+engineer1.MakeHRRequest();
